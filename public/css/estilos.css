@@ -24,3 +24,14 @@ h2{
 .row{
  	text-align: center;
  }
+.bodysandor{
+	background-color: rgba(0,0,0,.7);
+}
+.textosandor{
+	color: white;
+	text-align: justify;
+
+}
+.txtcabeza{
+	color: white;
+}
