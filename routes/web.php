@@ -15,6 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pjs',function(){
-	return view('personajes');
+Route::get('/pjs','PersonajeController@index');
+
+/*
+Route::get('/fans',function(){
+	return view ('fans');
 });
+*/
+
+Route::get('/fans',[
+	'uses'=>'FansController@index',
+	'as'=>'fans'
+	]);
+
+Route::get('/registro','FansController@create');
+
+Route::post('/store',[
+	'uses'=>'FansController@store',
+	'as'=>'store'
+	]);
