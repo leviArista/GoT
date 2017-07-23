@@ -34,3 +34,13 @@ Route::post('/store',[
 	'uses'=>'FansController@store',
 	'as'=>'store'
 	]);
+
+Route::get('/comentarios',[
+	'uses'=>'ComentariosController@index',
+	'as'=>'comentarios'
+	]);
+
+Route::post('/comentarios',[
+	'uses'=>'ComentariosController@buscar',
+	'as'=>'comentarios'
+	]);
